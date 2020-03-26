@@ -2,12 +2,17 @@ import React from "react";
 // import logo from "./assets/logo.svg";
 import "./styles/App.scss";
 import data from "./data.json";
+import SimpleList from "./components/simple-list";
 
 function App() {
   return (
     <div className="App">
       <h2>People List</h2>
-      <ul>
+
+      {/* REFACTOR INTO COMPONENT */}
+
+      <SimpleList list={data} />
+      {/* <ul>
         {data.map(person => {
           return (
             <li key={person.id}>
@@ -28,17 +33,17 @@ function App() {
                 </div>
               </div>
               <div className="contact-info">
-                <span class="link-phone">
+                <span className="link-phone">
                   <a href="google.com" target="_blank">
                     {person.contact.phone}
                   </a>
                 </span>
-                <span class="link-email">
+                <span className="link-email">
                   <a href="google.com" target="_blank">
                     {person.contact.email}
                   </a>
                 </span>
-                <span class="link-url">
+                <span className="link-url">
                   <a href="google.com" target="_blank">
                     {person.contact.url}
                   </a>
@@ -53,22 +58,7 @@ function App() {
             </li>
           );
         })}
-      </ul>
-      {/* <header className="App-header">
-          </ul>
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header> */}
+      </ul> */}
     </div>
   );
 }
