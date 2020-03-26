@@ -1,9 +1,7 @@
 import React from "react";
 import "./_styles.scss";
-
-import phone from "../../assets/phone.svg";
-import email from "../../assets/mail.svg";
-import url from "../../assets/url.svg";
+import "../social-links-list";
+import SocialSection from "../social-links-list";
 
 function SimpleListItem(props) {
   return (
@@ -27,38 +25,13 @@ function SimpleListItem(props) {
       </div>
 
       {/* SOCIAL INFO */}
-      <ul className="social">
-        <div className="contact-info">
-          <span className="link-phone">
-            <a href="google.com" target="_blank">
-              <span>
-                <img src={phone} alt="" className="icon" />
-              </span>
-              {props.item.contact.phone}
-            </a>
-          </span>
-          <span className="link-email">
-            <a href="google.com" target="_blank">
-              <span>
-                <img src={email} alt="" className="icon" />
-              </span>
-              {props.item.contact.email}
-            </a>
-          </span>
-          <span className="link-url">
-            <a href="google.com" target="_blank">
-              <span>
-                <img src={url} alt="" className="icon" />
-              </span>
-              {props.item.contact.url}
-            </a>
-          </span>
-        </div>
-      </ul>
+
+      <SocialSection sns={props.item} />
+
       <div className="since">
         <span>member since </span>
         {new Intl.DateTimeFormat("de-DE").format(
-          parseInt(props.item.memberSince)
+          new Date(props.item.memberSince)
         )}
       </div>
     </li>
