@@ -25,7 +25,6 @@ function SimpleListItem(props) {
       </div>
 
       {/* SOCIAL INFO */}
-
       <SocialSection sns={props.item} />
 
       <div className="since">
