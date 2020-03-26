@@ -1,4 +1,5 @@
 import React from "react";
+import "./_styles.scss";
 
 function SimpleListItem(props) {
   return (

@@ -1,0 +1,70 @@
+li {
+  margin: 40px 0;
+  padding: 40px;
+  box-shadow: -9px -9px 16px rgba(255, 255, 255, 0.7),
+    9px 9px 16px rgba(163, 163, 163, 0.7);
+  border-radius: 6px;
+}
+
+span {
+  padding: 0 6px;
+}
+
+.full-name {
+  font-size: 1.4rem;
+  padding: 10px 0;
+}
+
+.job-title {
+  font-size: 0.8rem;
+}
+
+.profile {
+  display: flex;
+}
+
+.profile-top {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.full-name,
+.job-title {
+  display: block;
+  // width: 100%;
+}
+
+.contact-info {
+  font-size: 0.8rem;
+  margin-top: 30px;
+}
+
+.since {
+  font-size: 0.6rem;
+  color: gray;
+  margin-top: 30px;
+  text-align-last: right;
+}
+
+.admin {
+  background: orange;
+  padding: 4px 20px;
+  margin-left: 20px;
+  border-radius: 5px;
+  color: white;
+  font-size: 0.9rem;
+}
+
+.link-phone,
+.link-email,
+.link-url {
+  opacity: 1;
+  transition: 0.2s;
+}
+
+.link-phone:hover,
+.link-email:hover,
+.link-url:hover {
+  opacity: 0.6;
+}
