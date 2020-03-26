@@ -20,23 +20,25 @@ function SimpleListItem(props) {
           </div>
         </div>
       </div>
-      <div className="contact-info">
-        <span className="link-phone">
-          <a href="google.com" target="_blank">
-            {props.item.contact.phone}
-          </a>
-        </span>
-        <span className="link-email">
-          <a href="google.com" target="_blank">
-            {props.item.contact.email}
-          </a>
-        </span>
-        <span className="link-url">
-          <a href="google.com" target="_blank">
-            {props.item.contact.url}
-          </a>
-        </span>
-      </div>
+      <ul className="social">
+        <div className="contact-info">
+          <span className="link-phone">
+            <a href="google.com" target="_blank">
+              {props.item.contact.phone}
+            </a>
+          </span>
+          <span className="link-email">
+            <a href="google.com" target="_blank">
+              {props.item.contact.email}
+            </a>
+          </span>
+          <span className="link-url">
+            <a href="google.com" target="_blank">
+              {props.item.contact.url}
+            </a>
+          </span>
+        </div>
+      </ul>
       <div className="since">
         <span>member since </span>
         {new Intl.DateTimeFormat("de-DE").format(
