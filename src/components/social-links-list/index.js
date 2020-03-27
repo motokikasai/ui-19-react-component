@@ -24,11 +24,11 @@ function SocialSection(props) {
 
   return (
     <div className="social">
-      <div className="contact-info">
+      <ul className="contact-info">
         {Object.values(contactWithIcon).map((contactInfo, key) => {
           return <SocialLinkItem key={key} contactInfo={contactInfo} />;
         })}
-      </div>
+      </ul>
     </div>
   );
 }

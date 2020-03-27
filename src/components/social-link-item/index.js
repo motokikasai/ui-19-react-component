@@ -2,7 +2,7 @@ import React from "react";
 
 function SocialLinkItem(props) {
   return (
-    <section className="social-item link-phone">
+    <li className="social-item link-phone">
       <a href="google.com" target="_blank">
         <span>
           <img
@@ -13,7 +13,7 @@ function SocialLinkItem(props) {
         </span>
         {props.contactInfo.datum}
       </a>
-    </section>
+    </li>
   );
 }
 

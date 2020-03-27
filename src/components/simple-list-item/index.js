@@ -5,7 +5,7 @@ import SocialSection from "../social-links-list";
 
 function SimpleListItem(props) {
   return (
-    <li>
+    <li className="card">
       <div className="profile">
         <img
           src={props.item.avatar}
