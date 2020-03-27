@@ -4,6 +4,13 @@ li.card {
   box-shadow: -9px -9px 16px rgba(255, 255, 255, 0.7),
     9px 9px 16px rgba(163, 163, 163, 0.7);
   border-radius: 6px;
+
+  transition: 0.3s;
+}
+
+li.card:hover {
+  box-shadow: -3px -3px 8px rgba(255, 255, 255, 0.7),
+    3px 3px 8px rgba(163, 163, 163, 0.7);
 }
 
 span {
