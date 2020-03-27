@@ -1,14 +1,15 @@
 import React from "react";
-
-import phone from "../../assets/phone.svg";
-import email from "../../assets/mail.svg";
-import url from "../../assets/url.svg";
+import SocialLinkItem from "../social-link-item";
 
 function SocialSection(props) {
   return (
     <div className="social">
       <div className="contact-info">
-        <section className="social-item link-phone">
+        {Object.values(props.sns).map((datum, key) => {
+          return <SocialLinkItem key={key} datum={datum} />;
+        })}
+
+        {/* <section className="social-item link-phone">
           <a href="google.com" target="_blank">
             <span>
               <img src={phone} alt="" className="icon" />
@@ -31,7 +32,7 @@ function SocialSection(props) {
             </span>
             {props.sns.contact.url}
           </a>
-        </section>
+        </section> */}
       </div>
     </div>
   );

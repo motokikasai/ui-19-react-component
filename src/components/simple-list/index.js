@@ -6,11 +6,7 @@ function SimpleList(props) {
   return (
     <ul className="simple-list">
       {props.list.map((item, id) => {
-        return (
-          // into COMPONENT...
-
-          <SimpleListItem key={id} item={item} />
-        );
+        return <SimpleListItem key={id} item={item} />;
       })}
     </ul>
   );
