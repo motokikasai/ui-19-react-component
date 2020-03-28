@@ -9,8 +9,7 @@ li.card {
 }
 
 li.card:hover {
-  box-shadow: -3px -3px 8px rgba(255, 255, 255, 0.7),
-    3px 3px 8px rgba(163, 163, 163, 0.7);
+  box-shadow: -3px -3px 8px white, 3px 3px 8px rgba(163, 163, 163, 0.7);
 }
 
 span {
