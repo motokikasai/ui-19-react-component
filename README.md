@@ -13,4 +13,3 @@ Let's refactor with components! UI should remain visually the same:
 * each link item will be a component as well: `SocialLinkItem`
 * make sure you make gradual changes and commit each of them
 
-#TEST : git remote set-url --all --push all URL
